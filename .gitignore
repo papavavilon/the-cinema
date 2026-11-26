@@ -1,0 +1,14 @@
+# Локальні налаштування з паролями
+/config/database.php
+/config/mail.php
+.env
+.env.*
+!.env.example
+
+# Резервні копії, дампи даних і локальні журнали
+*.sql
+!database/schema.sql
+*.zip
+*.log
+/backups/
+.DS_Store

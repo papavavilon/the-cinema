@@ -1,0 +1,86 @@
+/* Новини, інформація про кінотеатр та профіль. */
+
+.stories {
+    max-width: 1000px;
+}
+.story {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 35px;
+    border-top: 1px solid var(--line);
+    padding-block: 45px;
+    scroll-margin-top: 110px;
+}
+.story h2 {
+    font-size: 36px;
+}
+.story .lede {
+    font-size: 17px;
+}
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.brand-panel {
+    background: var(--lime);
+    color: var(--bg);
+    padding: 40px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.brand-panel .eyebrow {
+    color: var(--bg);
+}
+.brand-panel > div {
+    font-size: clamp(50px, 5vw, 76px);
+    line-height: 1;
+    letter-spacing: -0.06em;
+}
+.brand-panel em {
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+.brand-panel > span:last-child {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.account-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.booking-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid var(--line);
+    padding-block: 25px;
+}
+.booking-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.booking-item p {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0;
+}
+.booking-item > span {
+    font-size: 13px;
+    white-space: nowrap;
+}

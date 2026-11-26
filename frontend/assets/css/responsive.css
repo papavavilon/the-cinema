@@ -1,0 +1,415 @@
+/* Розміри для телефонів, планшетів і друку. */
+
+@media (min-width: 1500px) {
+    .hero-copy {
+        max-width: 750px;
+    }
+    .hero-description {
+        max-width: 560px;
+    }
+}
+@media (max-width: 1000px) {
+    .wrap {
+        width: calc(100% - 48px);
+    }
+    .site-header {
+        padding-inline: 24px;
+        gap: 24px;
+    }
+    .site-header nav {
+        gap: 20px;
+    }
+    .header-account {
+        margin-left: 0;
+    }
+    .hero {
+        height: 760px;
+        min-height: 0;
+    }
+    .hero-copy {
+        max-width: 600px;
+    }
+    .hero-bottom > span {
+        display: none;
+    }
+    .spotlight-links {
+        max-width: 100%;
+    }
+    .film-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .film-grid.four {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .film-card h3 {
+        font-size: 19px;
+    }
+    .booking-layout {
+        grid-template-columns: 260px 1fr;
+        gap: 20px;
+    }
+    .panel {
+        padding: 25px;
+    }
+    .journal-card {
+        padding: 24px;
+    }
+    .journal-card h3 {
+        font-size: 24px;
+    }
+    .footer-grid {
+        gap: 35px;
+    }
+    .detail-content {
+        grid-template-columns: 200px 1fr;
+        gap: 35px;
+    }
+    .info-grid {
+        gap: 15px;
+    }
+    .checkout-layout {
+        gap: 25px;
+    }
+}
+@media (max-width: 720px) {
+    .wrap {
+        width: calc(100% - 36px);
+    }
+    .section {
+        padding-block: 48px;
+    }
+    .site-header {
+        height: 72px;
+        padding-inline: 18px;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .wordmark {
+        font-size: 28px;
+    }
+    .header-account {
+        margin-left: auto;
+    }
+    .header-account .button {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    .menu-toggle {
+        display: block;
+        border: 0;
+        background: transparent;
+        color: var(--ink);
+        font-size: 12px;
+        order: 3;
+        padding: 10px 0;
+    }
+    .site-header nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 72px;
+        background: #18191b;
+        padding: 25px;
+        flex-direction: column;
+        border-bottom: 1px solid var(--line);
+        gap: 20px;
+    }
+    .site-header nav.open {
+        display: flex;
+    }
+    .hero {
+        height: auto;
+        min-height: 690px;
+        background-position: 63% center;
+    }
+    .hero-inner {
+        padding-top: 42px;
+    }
+    .hero-shade {
+        background: linear-gradient(90deg, #141617e8, #14161790), linear-gradient(0deg, #18191b, transparent);
+    }
+    .hero-copy > .eyebrow {
+        font-size: 9px;
+        margin-bottom: 70px;
+    }
+    .hero h1 {
+        font-size: 65px;
+        max-width: 500px;
+    }
+    .hero-description {
+        font-size: 14px;
+        max-width: 430px;
+    }
+    .hero-bottom {
+        margin-top: 55px;
+        align-items: start;
+    }
+    .spotlight-links {
+        gap: 20px;
+        font-size: 10px;
+    }
+    .spotlight-links a {
+        flex: 1;
+    }
+    .hero-meta {
+        font-size: 10px;
+    }
+    .section-heading {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .section-heading > .text-link {
+        margin-top: 20px;
+    }
+    .section-heading h2 {
+        font-size: 33px;
+    }
+    .film-grid,
+    .film-grid.four {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 27px 14px;
+    }
+    .film-card h3 {
+        font-size: 20px;
+    }
+    .film-meta {
+        font-size: 9px;
+    }
+    .poster-tag {
+        font-size: 8px;
+        padding: 4px 6px;
+        left: 8px;
+        top: 8px;
+    }
+    .journal-grid {
+        grid-template-columns: 1fr;
+    }
+    .journal-card {
+        min-height: 240px;
+    }
+    .journal-number {
+        font-size: 43px;
+        margin-bottom: 20px;
+    }
+    .about-strip {
+        padding-block: 48px 65px;
+    }
+    .about-strip h2 {
+        font-size: 49px;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .footer-grid > div:first-child {
+        grid-column: 1/-1;
+    }
+    .footer-grid .wordmark {
+        font-size: 36px;
+    }
+    .footer-bottom {
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+    .filter-bar {
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 15px;
+    }
+    .filter-bar label {
+        flex-basis: 100%;
+    }
+    .filter-bar .button {
+        flex: 1;
+    }
+    .page-heading {
+        margin-bottom: 30px;
+    }
+    .lede {
+        font-size: 17px;
+    }
+    .detail-hero {
+        padding-block: 35px;
+    }
+    .detail-content {
+        display: block;
+    }
+    .detail-poster {
+        width: 150px;
+        margin-bottom: 28px;
+    }
+    .detail-content h1 {
+        font-size: 42px;
+    }
+    .detail-content .lede {
+        font-size: 16px;
+    }
+    .day-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .time-chip {
+        padding: 9px 20px;
+    }
+    .booking-layout,
+    .checkout-layout,
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .booking-layout .panel {
+        margin-bottom: 0;
+    }
+    .booking-bar {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 12px;
+    }
+    .booking-bar .button {
+        width: 100%;
+        padding: 13px;
+    }
+    .seat-panel {
+        padding: 0;
+    }
+    .seat-grid {
+        min-width: 430px;
+    }
+    .seat-scroll {
+        padding-bottom: 15px;
+    }
+    .legend {
+        gap: 15px;
+    }
+    .form-row {
+        gap: 12px;
+    }
+    .panel {
+        padding: 22px;
+    }
+    .ticket-receipt {
+        padding: 25px;
+    }
+    .story {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-block: 30px;
+    }
+    .story h2 {
+        font-size: 29px;
+    }
+    .story .journal-number {
+        margin-bottom: 14px;
+    }
+    .brand-panel {
+        min-height: 370px;
+        padding: 30px;
+    }
+    .brand-panel > div {
+        font-size: 64px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .admin-fields {
+        grid-template-columns: 1fr;
+    }
+    .admin-heading h1 {
+        font-size: 40px;
+    }
+    .admin-nav {
+        gap: 6px;
+    }
+    .admin-nav a {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+    .booking-item {
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .stat strong {
+        font-size: 50px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *:before,
+    *:after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    .site-header,
+    .site-footer,
+    .button,
+    .text-link,
+    .skip {
+        display: none;
+    }
+    .wrap {
+        width: 100%;
+        max-width: 100%;
+    }
+    .section {
+        padding: 0;
+    }
+    .ticket-receipt {
+        border: 1px solid #555;
+    }
+    .eyebrow,
+    .lede,
+    .muted {
+        color: #333 !important;
+    }
+}
+
+.seat-hint {
+    display: none;
+}
+@media (max-width: 720px) {
+    .seat-hint {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        margin-top: 24px;
+    }
+}
+
+/* Фото фільму заповнює фон, а затемнення зберігає читабельність тексту. */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 38%;
+    z-index: -2;
+}
+.detail-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #18191bf5, #18191bdc);
+    z-index: -1;
+}
+.detail-hero .hero-background {
+    object-position: center;
+}
+@media (max-width: 720px) {
+    .hero .hero-background {
+        object-position: 63% center;
+    }
+}

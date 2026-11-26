@@ -1,0 +1,81 @@
+/* Таблиці та форми адміністратора. */
+
+.admin-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.admin-heading h1 {
+    font-size: 55px;
+}
+.admin-nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 15px 0 35px;
+}
+.admin-nav a {
+    background: var(--panel);
+    padding: 10px 15px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    font-size: 12px;
+}
+.stat strong {
+    font-size: 65px;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+.admin-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+}
+.table-scroll {
+    overflow-x: auto;
+    margin-top: 30px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+th,
+td {
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    max-width: 340px;
+    overflow-wrap: anywhere;
+}
+th {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+tr:hover {
+    background: #ffffff05;
+}
+.row-actions {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.row-actions form {
+    margin: 0;
+}
+.mail-body {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+.message h2 {
+    font-size: 30px;
+}
+.message textarea {
+    min-height: 100px;
+}
+.admin-form {
+    max-width: 1000px;
+}
